@@ -1,0 +1,5 @@
+name: mattermost-team-edition-5.39-docker
+description: Deploy Team Edition 5.39 docker image of Mattermost on a Digital Ocean droplet
+categories:
+- IT
+- Administration
