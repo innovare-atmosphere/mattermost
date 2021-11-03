@@ -43,10 +43,15 @@ resource "digitalocean_droplet" "www-mattermost" {
       # create mattermost installation directory
       "mkdir /root/mattermost",
       "mkdir /root/mattermost/config",
+      "chown -R 2000:2000 /root/mattermost/config",
       "mkdir /root/mattermost/data",
+      "chown -R 2000:2000 /root/mattermost/data",
       "mkdir /root/mattermost/logs",
+      "chown -R 2000:2000 /root/mattermost/logs",
       "mkdir /root/mattermost/plugins",
+      "chown -R 2000:2000 /root/mattermost/plugins",
       "mkdir /root/mattermost/client_plugins",
+      "chown -R 2000:2000 /root/mattermost/client_plugins",
     ]
   }
 
